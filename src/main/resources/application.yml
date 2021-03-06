@@ -1,0 +1,15 @@
+server:
+  port: 8989
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gin-vue?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.example.jwt.entity
+  mapper-locations: classpath*:com/example/jwt/mapper/*.xml
+
